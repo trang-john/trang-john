@@ -9,10 +9,9 @@
 </head>
 
 <body style="margin:0px">
-	<audio autoplay loop>
-		<source src="./music/music.mp3" type="audio/mpeg">
-		Your browser does not support the audio.
-	</audio>
+
+	<iframe src="music/music.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+
 	<canvas></canvas>
 	<div id="imgTxt">
 		<span id="Txt"></span> <br />
@@ -45,10 +44,10 @@
 		var flag = 1;
 		var myImage = document.getElementById("img");
 		var myTxt = document.getElementById("Txt");
-		var imageArray = ["pic/pic1.png", "pic/pic2.png", "pic/pic3.png", "pic/pic4.png", "pic/pic5.png", "pic/pic6.png",
-			"pic/pic7.png", "pic/pic8.png", "pic/pic9.png", "pic/pic10.png", "pic/pic11.png", "pic/pic12.png", "pic/pic13.png",
-			"pic/pic14.png", "pic/pic15.png", "pic/pic16.png", "pic/pic17.png", "pic/pic18.png", "pic/pic19.png", "pic/pic20.png", "pic/pic21.png",
-			"pic/pic22.png", "pic/pic23.png", "pic/pic24.png", "pic/pic26.png", "pic/tmp.png"];
+		var imageArray = ["./pic/pic1.png", "./pic/pic2.png", "./pic/pic3.png", "./pic/pic4.png", "./pic/pic5.png", "./pic/pic6.png",
+			"./pic/pic7.png", "./pic/pic8.png", "./pic/pic9.png", "./pic/pic10.png", "./pic/pic11.png", "./pic/pic12.png", "./pic/pic13.png",
+			"./pic/pic14.png", "./pic/pic15.png", "./pic/pic16.png", "./pic/pic17.png", "./pic/pic18.png", "./pic/pic19.png", "./pic/pic20.png", "pic/pic21.png",
+			"./pic/pic22.png", "./pic/pic23.png", "./pic/pic24.png", "./pic/pic26.png", "./pic/tmp.png"];
 		var imageIndex = 0;
 		var txtArray = ["Hello em bé của anh!", "When we first met, I fell for those beautiful eyes.", "You made my heart skip a beat.",
 			"We began talking a lot.", "I found he have a lot of things in common", "The more we talked the more I fell in love with you", "You took down my walls",
